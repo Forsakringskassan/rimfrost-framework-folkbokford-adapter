@@ -2,6 +2,12 @@
 
 Changelog of rimfrost-framework-folkbokford-adapter.
 
+## 0.0.2 (2026-02-11)
+
+### Bug Fixes
+
+-  Add fields missing from adapter response ([786a6](https://github.com/Forsakringskassan/rimfrost-framework-folkbokford-adapter/commit/786a6feeb5fefc5) Lars Persson)  
+
 ## 0.0.1 (2026-02-11)
 
 ### Bug Fixes
