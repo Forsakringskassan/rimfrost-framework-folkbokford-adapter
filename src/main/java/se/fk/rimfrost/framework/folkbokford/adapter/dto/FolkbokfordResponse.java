@@ -16,10 +16,18 @@ public interface FolkbokfordResponse
 
    String efternamn();
 
+   Kon kon();
+
    String utdelningsadress();
 
    String postnummer();
 
    String postort();
 
+   String careOf();
+
+   public enum Kon
+   {
+      MAN, KVINNA
+   }
 }
