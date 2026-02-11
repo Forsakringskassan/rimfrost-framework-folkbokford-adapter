@@ -2,6 +2,7 @@ package se.fk.rimfrost.framework.folkbokford.adapter;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import se.fk.rimfrost.framework.folkbokford.adapter.dto.FolkbokfordResponse;
+import se.fk.rimfrost.framework.folkbokford.adapter.dto.FolkbokfordResponse.Kon;
 import se.fk.rimfrost.framework.folkbokford.adapter.dto.ImmutableFolkbokfordResponse;
 import se.fk.rimfrost.api.folkbokforing.jaxrsspec.controllers.generatedsource.model.FolkbokforingPersnrGet200Response;
 
@@ -22,6 +23,10 @@ public class FolkbokfordMapper
             .utdelningsadress(apiResponse.getAdress().getUtdelningsadress())
             .postnummer(apiResponse.getAdress().getPostnummer())
             .postort(apiResponse.getAdress().getPostort())
+            .careOf(apiResponse.getAdress().getCareOf())
+            .kon(apiResponse.getKon() == se.fk.rimfrost.api.folkbokforing.jaxrsspec.controllers.generatedsource.model.Kon.K
+                  ? Kon.KVINNA
+                  : Kon.MAN)
             .build();
    }
 
